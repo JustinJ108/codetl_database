@@ -5,5 +5,16 @@
   <%= @job.title %>
 </p>
 
+<p>
+  <strong>Body:</strong>
+  <%= @job.body %>
+</p>
+
+<p>
+  <strong>Date added:</strong>
+  <%= @job.date %>
+</p>
+
+
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>

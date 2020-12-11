@@ -1,14 +1,18 @@
 <p id="notice"><%= notice %></p>
 
+<body style="background-color:powderblue;">
 
 <h1> Code Tenderloin Database </h1>
+
+<%= image_tag("logo.png", :size => "200x112" ) %>
 
 <table>
 <tbody>
 <tr>
-<td><h2>Opportunities</h2>
+<td>
 </td>
-<td>   <%= link_to 'Jobs', jobs_path %>    </td>
+<td>   
+</td>
 
 </tr>
 </tbody>
@@ -16,7 +20,23 @@
 
 
 
-<table border ="1px">
+<table>
+<tbody>
+<tr>
+<td><h2>Opportunities</h2>
+</td>
+<td>  <%= link_to '<button type="button">Jobs</button>'.html_safe, jobs_path %>
+</td>
+
+
+
+</tr>
+</tbody>
+</table>
+
+
+
+<table border ="1px" style="background-color:#4fb0ae;">
   <thead>
     <tr>
       <th>Company</th>
@@ -46,5 +66,7 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to '<button type="button">New Post</button>'.html_safe, new_post_path %>
 
+
+</body>
